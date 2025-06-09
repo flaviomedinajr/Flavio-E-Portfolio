@@ -5,14 +5,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: blue;
 }
 
 h1, h2, h3, h4, h5, h6, span {
-    color: blue;
+    color: black;
     text-align: center;
     line-height: 1.5;
 }
-
 
 p {
     line-height: 1.5;
