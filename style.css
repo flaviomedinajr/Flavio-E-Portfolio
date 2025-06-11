@@ -115,7 +115,8 @@ ABOUT ME
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 1.5);
+    /* for box-shadow: 0 8px 16px rgba(0, 0, 0, 1.5); - option*/
+    box-shadow: 0 8px 16px rgb(124, 71, 0);
     margin-bottom: 28px;
 }
 
@@ -136,6 +137,9 @@ ABOUT ME
     margin-bottom: 28px;
 }
 
-strong {
-    color: black;
+.about-me__link {
+    font-size: 50px;
+    text-decoration: none;
+    color: #ff6780;
+    padding: 0 16px;
 }
