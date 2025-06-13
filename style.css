@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: hsl(0, 12%, 84%);
 }
@@ -31,6 +35,31 @@ p {
 
 a {
     text-decoration: none;
+    position: relative;
+}
+
+.link__hover--effect:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    width: 0;
+    bottom: -3px;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover--effect:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.link__hover-effect--white:after {
+    background-color: #fff;
+}
+
+.link__hover-effect--black:after {
+    background-color: #000;
 }
 
 li {
@@ -334,7 +363,7 @@ footer {
 
 .footer__logo--img {
     width: 100px;
-    height: 100px;
+    height: 90px;
 }
 
 .footer__row {
@@ -381,3 +410,4 @@ footer {
 }
 
 /* FOOTER - END */
+
