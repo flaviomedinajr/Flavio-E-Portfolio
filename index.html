@@ -73,12 +73,12 @@
               impact on the world
             </p>
             <div class="about-me__links">
-                <a href="https://www.linkedin.com/in/flavio-medina-jr-a2b765229/" class="about-me__link">
+                <a href="https://www.linkedin.com/in/flavio-medina-jr-a2b765229/" target="_blank" class="about-me__link">
                     <i class="fa-brands fa-linkedin" style="color: #041ff1;"></i>                
                 </a>
-                <a href="https://github.com/flaviomedinajr" class="about-me__link">
+                <a href="https://github.com/flaviomedinajr" target="_blank" class="about-me__link">
                     <i class="fa-brands fa-github" style="color: #050505;"></i>                </a>
-                <a href="file:///Users/flaviomedina/Desktop/RESUME(S)/FlavioMedinaResume.pdf" class="about-me__link">
+                <a href="./assets/FlavioMedinaResume.pdf" class="about-me__link">
                     <i class="fas fa-file-pdf" style="color: red;"></i>                
                 </a>
                 <a href="" class="about-me__link">
@@ -236,12 +236,13 @@
     <!--STACK TECH - END-->
 
     <!--PROJECTS START-->
-    <section id="projects">
+    <section id="projects"> 
         <div class="container">
             <div class="row">
                 <h1 class="section__title">Here are some of my <span class="text--tan">projects</span>:</h1>
                 <ul class="project__list">
-                    <li class="project">
+
+                    <li class="project"> <!-- PART 1 -->
                         <div class="project__wrapper">
                             <img src="./assets/s_skincare.png" class="project__img" alt="">
                             <div class="project__description">
@@ -277,21 +278,58 @@
                             </div>
                         </div>
                     </li>
-                    <li class="project">
+
+                    <li class="project"> <!-- PART 2 -->
                         <div class="project__wrapper">
-                            <img src="./assets/s_skincare.png" class="project__img" alt="">
+                            <img src="./assets/neo4j.png" class="project__img" alt="">
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Skinstric AI Internship: New-Age Skincare Solutions
+                                    Heart Disease Data Analysis with Neo4j Nodes
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, other technologies
+                                    Cypher (neo4j), HTML, CSS, JavaScript
                                 </h4>
                                 <p class="project__description--para">
-                                    Developed a real-time skin analysis platform using OpenAI 
-                                    Vision API, Next.js, React, and CSS. Translated Figma 
-                                    designs into a responsive, user-friendly 
-                                    interface with modern web technologies.
+                                    I built an interactive tool to explore heart disease data using
+                                    dropdowns and search filters powered by Cypher queries. It uses 
+                                    nodes from a Neo4j database to display how conditions like “asymptomatic” 
+                                    affect different demographics. The interface is clean, with improved styling and hover effects. 
+                                    It’s designed for clarity, ease of use, and deeper insights.
+                                </p>
+                                <!--
+                                This is just linked to project - not required [START]
+                                -->
+                                <div class="project__description--links">
+                                    <a href="https://github.com/flaviomedinajr" target="_blank" 
+                                    class="project__description--link">
+                                      <i class="fab fa-github"></i>
+                                    </a>
+                                  
+                                    <a href="https://people.rit.edu/fjm8881/ISTE240/group/group-2-unix-survival-main/content/index.php" target="_blank" 
+                                    class="project__description--link">
+                                      <i class="fas fa-link"></i>
+                                    </a>
+                                  </div>
+                                <!--
+                                This is just linked to project - not required [END]
+                                -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="project"> <!-- PART 3 -->
+                        <div class="project__wrapper">
+                            <img src="./assets/neflix.png" class="project__img" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Netflix-Style Streaming Clone                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    React, JavaScript, HTML, CSS, other technologies
+                                </h4>
+                                <p class="project__description--para">
+                                    Created a Netflix Clone by fetching data from 
+                                    the TMDB API. Enabled user account creation and 
+                                    sign-in using Firebase authentication.
                                 </p>
                                 <!--
                                 This is just linked to project - not required [START]
@@ -318,13 +356,6 @@
         </div>
     </section>
     <!--PROJECTS END-->
-   
-    <body>
-      <a href="https://github.com/flaviomedinajr" target="_blank">
-        GitHub Link
-      </a>
-    </body>
-    </html>
     
   </body>
 </html>
