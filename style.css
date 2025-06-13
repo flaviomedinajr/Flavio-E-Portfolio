@@ -242,6 +242,10 @@ ABOUT ME -- END
     margin-bottom: 135px;
 }
 
+.project:last-child {
+    margin-bottom: 40px;
+}
+
 .project__list {
     padding-top: 40px;
 }
