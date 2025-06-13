@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* GENERAL -- END */
 * {
     font-family: 'Lato';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: hsl(0, 12%, 84%);
 }
+
+body {
+    background-color: hsl(0, 12%, 84%);
+  }
 
 h1, h2, h3, h4, h5, h6, span {
     color: black;
@@ -46,7 +50,23 @@ li {
     color: #c67102;
 }
 
-/* NAVIGATION BAR  */
+section:nth-child(even) {
+    background-color: rgb(222, 222, 222);
+}
+  
+
+.container {
+    padding: 50px 0;;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+/* GENERAL -- END */
+
+
+/* NAVIGATION BAR -- START */
 
 nav {
     height: 100px;
@@ -89,13 +109,13 @@ nav {
     margin: 0 12px;
     font-weight: bold;
 }
+/* NAVIGATION BAR -- START */
+
+
 
 /*
-
-ABOUT ME
-
+ABOUT ME -- START
 */
-
 #about-me {
     min-height: 100vh;
     display: flex;
@@ -164,3 +184,20 @@ ABOUT ME
     margin-top: 80px;
 }
 
+/*
+ABOUT ME -- END
+*/
+
+
+/* TECH STACK - START */
+.language__img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.language__img--wrapper {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
