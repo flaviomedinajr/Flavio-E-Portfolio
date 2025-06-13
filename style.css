@@ -238,11 +238,13 @@ ABOUT ME -- END
 
 
 /* PROJECT - START */
+.project {
+    margin-bottom: 135px;
+}
 
 .project__list {
     padding-top: 40px;
 }
-
 
 .project__wrapper {
     display: flex;
@@ -250,10 +252,6 @@ ABOUT ME -- END
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-}
-
-.project {
-
 }
 
 .project__wrapper:before {
@@ -281,4 +279,43 @@ ABOUT ME -- END
 .project:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
+}
+
+.project:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
+    max-width: 550px;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 450ms, opacity 300ms;
+}
+
+.project__description--title {
+    font-size: 30px;
+} 
+
+.project__description--para {
+    margin: 16px 0;
+}
+
+.project__description--link {
+    font-size: 20px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.project__description--title, 
+.project__description--sub-title,
+.project__description--para,
+.project__description--link {
+    text-align: left;
+    color: #fff;
+
 }
