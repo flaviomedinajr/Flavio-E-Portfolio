@@ -346,12 +346,10 @@ footer {
 }
 
 .footer__social--link,
-.footer__copyright {
+.footer__copyright,
+.footer__logo--popper
+{
     color: #fff;
-}
-
-.footer__logo {
-    margin-bottom: 20px;
 }
 
 .footer__social--list {
@@ -361,4 +359,25 @@ footer {
     justify-content: space-around;
     margin-bottom: 28px;
 }
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer__anchor:hover 
+.footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+}
+
 /* FOOTER - END */
